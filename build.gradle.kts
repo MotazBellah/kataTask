@@ -20,7 +20,8 @@ object Version {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    testImplementation(kotlin("test-junit5"))
+  implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+  testImplementation(kotlin("test-junit5"))
 
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:${Version.KTX_COROUTINES}")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:${Version.KTX_COROUTINES}")
